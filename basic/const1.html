@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //.값변경 불가
+      // const PI = 3.14159265;
+      // Pi=3.14 // typeError
+
+      // 2. 선언할때 값 부여
+
+      const PI;
+      PI= 3.14234//systaxerror
+
+      //3.block scope 가짐
+      const x = 10;
+      {
+          const x = 2;
+
+      }
+      consle.log(x);
+    </script>
+  </body>
+</html>

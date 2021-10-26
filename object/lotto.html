@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //로또번호 6개 주출하여 배열에 담은 후 추출
+      let lottoArray = new Array();
+
+      while (true) {
+        let num = Math.floor(Math.random() * 47) + 1;
+        lottoArray.push(num);
+
+        if (lottoArray.length > 5) break;
+      }
+      document.write("이번 주 로또번호 ", lottoArray);
+    </script>
+  </body>
+</html>

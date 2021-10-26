@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let userName = prompt("소문자로 영문 이름 입력 :");
+      let tel = prompt("전화번호 입력 (gudtlr : 000-0000-0000) :");
+
+      //입력받은  userName  은 대문자로 출력
+      //   입력받은 tel 은 가운데 자리를 ####으로 변환하여 출력
+
+      document.write("대문자 변경", userName.toUpperCase(), "<br>");
+
+      document.write(
+        "특정 문자 변경",
+        tel.replace(tel.substring(4, 8), "####"),
+        "<br>"
+      );
+    </script>
+  </body>
+</html>

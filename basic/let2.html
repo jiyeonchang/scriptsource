@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var y = 2;
+      let x = 10;
+      //블록 바깥에 선언한 let 이나온다
+      {
+        let x = 2;
+        var y = 3;
+        // 안의 y값이 나온다 .
+      }
+      console.log(x);
+      console.log(y);
+    </script>
+  </body>
+</html>

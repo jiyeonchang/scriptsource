@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //어떠한 자료 타입도 담을 수 있다 .
+      let arr = new Array();
+
+      //배열요소 추가
+      arr.push(78);
+      arr.push(44);
+      arr.push(41);
+      arr.push(423);
+      arr.push(424);
+      arr.push(11);
+
+      for (let i of arr) {
+        document.write(i + "<br>");
+      }
+      document.write("<br><br>");
+      document.write("연결" + arr.join("-") + "<br>");
+      document.write(
+        "다른배열과 연결" + arr.concat([1, 2, 3, 4, 5, 5]) + "<br>"
+      );
+      document.write("요소 자르기" + arr.slice(5) + "<br>");
+      document.write("거꾸로 출력" + arr.reverse(5, 5) + "<br>");
+      document.write(arr.sort());
+    </script>
+  </body>
+</html>

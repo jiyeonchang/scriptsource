@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      //사용자로부터 국,영,수 점수를 입력받은 후 평균을 구해서
+      //90이상이면 A ,80 이상이면 b , 70은 c , 60은 df로
+      let k = Number(prompt("국어점수를 입력하세요"));
+      let e = Number(prompt("영어점수를 입력하세요"));
+      let m = Number(prompt("수학점수를 입력하세요"));
+      //  let jumsu = (k + e + m) / 3; +는 연결의 의마가 되어버림
+      // 숫자로 변환하려면 Number 과 parseInt로 변환 시키면 문자가 숫자로 변환됨
+
+      let jumsu = (k + e + m) / 3;
+
+      switch (parseInt(jumsu / 10)) {
+        case 10:
+        case 9:
+          console.log("A");
+          break;
+        case 9:
+          console.log("B");
+          break;
+        case 9:
+          console.log("CA");
+          break;
+        case 9:
+          console.log("D");
+          break;
+        default:
+          console.log("F");
+      }
+    </script>
+  </body>
+</html>
